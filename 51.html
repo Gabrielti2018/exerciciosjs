@@ -12,23 +12,21 @@
     negativo, em uma variável chamada “B”. No final mostrar o
     resultado das duas variáveis.
     </h2>
-   <input type="text" id="nome">
-   <input type="number" value="M">
-   <input type="number" value="F">
+   <input type="number" id="nome"> <p>
+   a:<input type="number" id="r"> <p>
+   b:<input type="number" id="s"> <p>   
+   <button onclick="resposta()">ok</button>
 
    <div id="saida"></div>
 </body>
 </html>
     <script>
         function resposta(){
-        int a = 
-        int b =         
-        if(sexo[0].checked){
-            
-            saida("<p>Ilmo Sr. "+ nome +"</p>", "#saida");
-        }else{
-            
-            saida("<b>Ilma Sra. "+ nome +"</b>", "#saida");
+        let a =  document.querySelector("#nome").value;       
+        if(a > 0 ){            
+            document.getElementById("r").value = a;
+        }else{            
+            document.getElementById("s").value = a;
         }
     }
     function saida(texto, local){
